@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>catalinafigueroa.portafolio</title>
+  <meta name="description" content="Portafolio de Catalina Figueroa: diseño gráfico, dirección visual, identidad y proyectos experimentales." />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='13' fill='%23120b12'/%3E%3Ctext x='32' y='44' text-anchor='middle' font-size='34' font-weight='bold' fill='%23ffc94b'%3ECF%3C/text%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="cursor-dot" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="nav">
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#quien-soy">¿Quién soy?</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="section hero" data-section="01">
+      <div class="hero-copy-block reveal">
+        <p class="eyebrow">Diseño gráfico / Dirección visual / Identidad</p>
+        <h1 class="hero-title parallax" data-speed="12">PORTAFOLIO</h1>
+        <p class="hero-copy">Una selección de proyectos editoriales, identitarios, infográficos y experimentales desarrollados durante mi formación como diseñadora gráfica.</p>
+        <a class="button" href="#proyectos">Ver proyectos ↓</a>
+      </div>
+
+      <div class="home-gif-float tilt reveal parallax" data-speed="-10">
+        <video src="img/samsa.mp4" aria-label="Animación del proyecto Samsa" autoplay muted loop playsinline preload="metadata"></video>
+      </div>
+
+      <div class="ghost-word parallax" data-speed="-18">PORTAFOLIO</div>
+      <div class="scroll-mark">↓ Scroll</div>
+    </section>
+
+    <section id="quien-soy" class="section about" data-section="02">
+      <div class="about-card reveal">
+        <div class="about-photo tilt">
+          <img src="img/catalina.jpg" alt="Catalina Figueroa" />
+        </div>
+        <div class="about-info">
+          <span class="number">02</span>
+          <h2>¿QUIÉN<br>SOY?</h2>
+          <p>Soy Catalina Figueroa, estudiante de Diseño Gráfico. Mi trabajo cruza lo editorial, lo experimental y lo visualmente intenso, buscando construir sistemas gráficos con identidad propia.</p>
+          <p>Me interesan los proyectos que mezclan símbolos, cultura visual, narrativa y composición. Este portafolio reúne procesos, piezas finales y exploraciones desarrolladas durante el semestre.</p>
+          <div class="mini-contact">
+            <strong>Contacto</strong>
+            <span>catalina.figueroa.cl@gmail.com</span>
+            <span>+56995418094</span>
+            <span>@atak.tatu</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="proyectos" class="section projects" data-section="03">
+      <div class="projects-head reveal">
+        <span class="number">03</span>
+        <h2>PROYECTOS</h2>
+      </div>
+      <div class="marquee-row row-right" aria-label="Proyectos fila superior">
+        <div class="marquee-track" id="rowTop"></div>
+      </div>
+      <div class="marquee-row row-left" aria-label="Proyectos fila inferior">
+        <div class="marquee-track" id="rowBottom"></div>
+      </div>
+    </section>
+
+    <section id="detalle" class="section detail" hidden>
+      <a href="#proyectos" class="back">← Volver a proyectos</a>
+      <div class="detail-grid">
+        <div class="detail-info reveal">
+          <span id="detailCount" class="number">01 / 05</span>
+          <h2 id="detailTitle">Proyecto</h2>
+          <h3 id="detailType">Categoría</h3>
+          <p id="detailDescription"></p>
+          <dl>
+            <dt>Año</dt><dd id="detailYear">2025</dd>
+            <dt>Herramientas</dt><dd id="detailTools">Illustrator / Photoshop</dd>
+            <dt>Categoría</dt><dd id="detailCat">Editorial</dd>
+          </dl>
+        </div>
+        <div class="detail-media reveal" id="detailMedia"></div>
+      </div>
+    </section>
+
+    <section id="contacto" class="section contact-section" data-section="04">
+      <div class="contact-layout reveal">
+        <div>
+          <span class="number">04</span>
+          <h2>HABLEMOS</h2>
+          <p>Escríbeme para comentar proyectos, colaboraciones o encargos gráficos.</p>
+          <div class="contact-lines">
+            <span>catalina.figueroa.cl@gmail.com</span>
+            <span>+56995418094</span>
+            <span>@atak.tatu</span>
+          </div>
+        </div>
+        <form class="contact-form" action="mailto:catalina.figueroa.cl@gmail.com" method="post" enctype="text/plain">
+          <label>Nombre<input type="text" name="nombre" placeholder="Tu nombre" required></label>
+          <label>Correo<input type="email" name="correo" placeholder="tu@email.com" required></label>
+          <label>Mensaje<textarea name="mensaje" rows="6" placeholder="Cuéntame qué necesitas" required></textarea></label>
+          <button type="submit">Enviar mensaje ↗</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
